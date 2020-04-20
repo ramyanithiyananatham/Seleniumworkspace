@@ -1,3 +1,5 @@
+Grid
+
 For this we need                                                  Selenium Server jar file - the same file used in running Selenium RC tests.
 To run test scripts on the Grid, you should use the DesiredCapabilities and the RemoteWebDriver objects.
 	DesiredCapabilites is used to set the type of browser and OS that we will automate
@@ -42,3 +44,17 @@ git push	git push [variable name] master ---This command sends the committed cha
 git pull	git pull [Repository Link] --- fetches and merges changes on the remote server to your working directory.
 git stash	git stash save---This command temporarily stores all the modified tracked files.		git stash drop--This command discards the most recently stashed changeset.
 			git stash pop git stash list
+
+
+
+steps used in git are
+signin in github.com
+create repositry
+copy url
+In cmd: git clone url
+Copy project content to folderr mentioned url
+in cmd: cd to repositry folder 
+git add .
+git commit-m "comment"
+git push
+
