@@ -1,0 +1,44 @@
+For this we need                                                  Selenium Server jar file - the same file used in running Selenium RC tests.
+To run test scripts on the Grid, you should use the DesiredCapabilities and the RemoteWebDriver objects.
+	DesiredCapabilites is used to set the type of browser and OS that we will automate
+	RemoteWebDriver is used to set which node (or machine) that our test will run against.
+   @BeforeTest
+     public void setUp() throws MalformedURLException {
+         baseURL = "http://demo.guru99.com/test/guru99home/";
+         nodeURL = "http://192.168.43.223:4444/wd/hub";
+         DesiredCapabilities capability = DesiredCapabilities.chrome();
+         capability.setBrowserName("chrome");
+         capability.setPlatform(Platform.WIN10);
+         driver = new RemoteWebDriver(new URL(nodeURL), capability);
+     }
+ 
+ copy .json config file in hub
+Launch hub                                                           java -jar selenium-server-standalone-2.53.1.jar -role hub -hubConfig hubconfig.json
+Open web browser and try connecting to the below URL                 http://192.168.43.223:4444/grid/console
+copy .json config file in node
+ run             Java-Dwebdriver.chrome.driver="chromedriver.exe" -Dwebdriver.ie.driver="IEDriverServer.exe" -Dwebdriver.gecko.driver="geckodriver.exe" -jar selenium-server-standalone-2.53.1.jar -role node -nodeConfig node1.json
+ Navigate to the grid console to verify if the nodes have been successfully configured
+
+ 
+ 
+ git
+git config	git config –global user.name “[name]”  
+git init	git init [repository name]
+git clone 	git clone [url]  
+git add 	git add [file] 											git add *  
+git commit	git commit -m “[ Type in the commit message]”
+git diff	git diff --differnce not yet staged &                  git diff –staged			git diff [first branch] [second branch]
+git reset	git diff [first branch] [second branch]- unstages the file		git reset [commit]-- undoes after specified commit  		git reset –hard [commit] discards all history and goes back to the specified commit.
+git status 	git status list files that have to be commited
+git rm		git rm [file]  deletes file from working directory and stages the deletion		it log –follow[file] this shows history +renaming of files also
+git log		list version history for current branch
+git show	git show [commit] --command shows the metadata and content changes of the specified commit.
+git tag		give tag to commit
+git branch  list all br		git branch [branch name]-create new br		git branch -d [branch name] deletre br
+git checkout git checkout [branch name] swith to another branch		git checkout -b [branch name] -switch to new br
+git merge 	git merge [branch name]-- This command merges the specified branch’s history into the current branch.
+git remote	git remote add [variable name] [Remote Server Link] ---This command is used to connect your local repository to the remote server.
+git push	git push [variable name] master ---This command sends the committed changes of master branch to your remote repository.
+git pull	git pull [Repository Link] --- fetches and merges changes on the remote server to your working directory.
+git stash	git stash save---This command temporarily stores all the modified tracked files.		git stash drop--This command discards the most recently stashed changeset.
+			git stash pop git stash list

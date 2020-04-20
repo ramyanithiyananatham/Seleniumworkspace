@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50254" started-at="2020-04-18T03:41:06Z" finished-at="2020-04-18T03:41:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="50254" started-at="2020-04-18T03:41:06Z" finished-at="2020-04-18T03:41:57Z">
+      <class name="Example.ExplicitWaitOnAlert">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:Example.ExplicitWaitOnAlert@3bfdc050]" name="beforetest" is-config="true" duration-ms="7743" started-at="2020-04-18T03:41:06Z" finished-at="2020-04-18T03:41:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method status="PASS" signature="test()[pri:0, instance:Example.ExplicitWaitOnAlert@3bfdc050]" name="test" duration-ms="41224" started-at="2020-04-18T03:41:14Z" finished-at="2020-04-18T03:41:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:Example.ExplicitWaitOnAlert@3bfdc050]" name="aftertest" is-config="true" duration-ms="1240" started-at="2020-04-18T03:41:55Z" finished-at="2020-04-18T03:41:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- Example.ExplicitWaitOnAlert -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
